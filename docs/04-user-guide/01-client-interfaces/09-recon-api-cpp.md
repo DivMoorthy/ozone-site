@@ -27,7 +27,28 @@ Only returns the limited number of results. The default limit is 1000.
 
 Returns all the ContainerMetadata objects.
 
-[put code image here]
+``` bash
+{
+      "data": {
+        "totalCount": 3,
+        "containers": [
+          {
+            "ContainerID": 1,
+            "NumberOfKeys": 834
+          },
+          {
+            "ContainerID": 2,
+            "NumberOfKeys": 833
+          },
+          {
+            "ContainerID": 3,
+            "NumberOfKeys": 833
+          }
+        ]
+      }
+    }
+```
+
 
 ## GET /api/v1/containers/:id/keys
 ### Parameters
